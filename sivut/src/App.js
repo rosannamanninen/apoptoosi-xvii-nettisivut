@@ -1,8 +1,15 @@
 import React from 'react'
-const App = () => (
-  <div>
-    <p>Hello world lo23</p>
-  </div>
-)
+
+
+// Whole page
+const App = () => {
+
+
+  return (
+    <p>Moikka Samu</p>
+  )
+}
+
+
 
 export default App
