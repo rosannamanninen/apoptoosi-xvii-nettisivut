@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import fimlab from './fimlablogo.png'
 
 // koko sponssijutun pohja
 const SponssiStyle = styled.div`
@@ -8,8 +9,7 @@ const SponssiStyle = styled.div`
     min-height: 1000px;
 
     margin: 0;
-
-    background-color: #c9adba;
+    background-color: #F1C37E;
 
 `;
 
@@ -29,55 +29,49 @@ const ContentBox = styled.div`
     padding-bottom: 10px;
     margin-left: 5%; margin-right: 5%;
 
-    background-color: #c9adba;
     color: white;
 
 `;
 
 // texti sponssien viereen
 const SponssiText = styled.div`
-    font-size: 28px;
-    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    font-size: 50px;
+    font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
     color: #210412;
 
-    width: 50%;
+    width: 400px;
     padding:bottom;
 
 `;
 
-// svg-laatikko sponssilogoille
-const Logot = styled.svg` 
-
-    height: 350;
-    width: 350;
-
+// div sponssilogoille
+const Logot = styled.div` 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
 `;
 
 
 const Sponssi = () => {
 
 
-
     return (
             <SponssiStyle> 
                 <ContentBox>
                     <SponssiText> 
-                        Tähän pari kivaa sanaa sponseseista hjeeeee goikjaseopjfapotjfm Tähän pari kivaa sanaa sp
+                        Vuosijuhlaamme ovat olleet mukana mahdollistamassa Fimlab,... blaablaablaa
                     </SponssiText>
-                    <Logot height = '400' width = '500'>
-                        <rect
-                            width = '150'
+                    <Logot>
+                        <img src={fimlab}
+                            alt="fimlab logo"
                             height = '150'
-                        >
-                        </rect>
-                        <rect
-                            x = '200'
-                            y = '200'
-                            width = '150'
+                            />
+                        <img src={fimlab}
+                            alt="fimlab logo"
                             height = '150'
-                        >
-                        </rect>
+                            />
                     </Logot>
                 </ContentBox>
             </SponssiStyle>

@@ -15,11 +15,9 @@ const BannerText = styled.div`
     font-size: 28px;
     font-family: 'IBM Plex Sans Devanagari', sans-serif;
     font-weight: 200;
-    color: #d3def0;
-
-    max-width: 1000px;
-
-`;
+    color: #ffd5bf;
+    max-width: 900px;
+`; // d3def0
 
 const BanneriStyle = styled.div`
     display: flex;
@@ -34,10 +32,10 @@ const BanneriStyle = styled.div`
     margin: 0;
     padding-bottom: 20px;
 
-    background-color: #162c4f;
+    background-color: #C26B5B;
     color: white;
 
-`;
+`; // #162c4f
 
 const Banneri = () => {
 
