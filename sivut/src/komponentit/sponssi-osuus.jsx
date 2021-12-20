@@ -1,35 +1,17 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import fimlab from './fimlablogo.png'
-
-// koko sponssijutun pohja
-const SponssiStyle = styled.div`
-
-    width: 100%
-    min-height: 1000px;
-
-    margin: 0;
-    background-color: #F1C37E;
-
-`;
+import fimlab from './fimlablogo.png';
+import "../index.css";
 
 
+ 
 
 // yhteinen kapeampi alue textille ja laatikolle
 const ContentBox = styled.div`
     display: flex;
-    height: 500px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 5%; margin-right: 5%;
-
-    color: white;
+    margin:0;
 
 `;
 
@@ -37,20 +19,11 @@ const ContentBox = styled.div`
 const SponssiText = styled.div`
     font-size: 50px;
     font-family: 'East Sea Dokdo', cursive;
+    text-shadow: 2px 2px 4px #564750;
     font-weight: 400;
-    color: #210412;
+    color: white;
+    text-align: center;
 
-    width: 400px;
-    padding:bottom;
-
-`;
-
-// div sponssilogoille
-const Logot = styled.div` 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 40px;
 `;
 
 
@@ -58,23 +31,32 @@ const Sponssi = () => {
 
 
     return (
-            <SponssiStyle> 
-                <ContentBox>
+            <> 
+
                     <SponssiText> 
-                        Vuosijuhlaamme ovat olleet mukana mahdollistamassa Fimlab,... blaablaablaa
+                        Vuosijuhlaamme ovat olleet mukana mahdollistamassa Fimlab, GE Healthcare ja Merkkimafia.
                     </SponssiText>
-                    <Logot>
-                        <img src={fimlab}
+                    <div id = "logoframe">
+                        <img id = "logo"
+                            src={fimlab}
                             alt="fimlab logo"
                             height = '150'
                             />
-                        <img src={fimlab}
+                        <img id = "logo"
+                            src={fimlab}
                             alt="fimlab logo"
                             height = '150'
+                            
                             />
-                    </Logot>
-                </ContentBox>
-            </SponssiStyle>
+                        <img id = "logo"
+                            src={fimlab}
+                            alt="fimlab logo"
+                            height = '150'
+                            
+                            />
+                    </div>
+
+            </>
     )
 };
 

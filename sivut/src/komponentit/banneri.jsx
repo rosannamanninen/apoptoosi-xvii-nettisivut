@@ -2,52 +2,26 @@ import React from 'react'
 import styled from 'styled-components';
 
 
-const BannerHead = styled.div`
-    font-size:140px;
-    font-family: 'East Sea Dokdo', cursive;
-
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 35px;
-`;
-
 const BannerText = styled.div`
     font-size: 28px;
     font-family: 'IBM Plex Sans Devanagari', sans-serif;
-    font-weight: 200;
-    color: #ffd5bf;
-    max-width: 900px;
+    font-weight: 350;
+    opacity: 0.9;
+    color: white;
 `; // d3def0
 
-const BanneriStyle = styled.div`
-    display: flex;
-    height: 500px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    width: 100%
-    min-height: 1000px;
-
-    margin: 0;
-    padding-bottom: 20px;
-
-    background-color: #C26B5B;
-    color: white;
-
-`; // #162c4f
 
 const Banneri = () => {
 
     return (
-        <BanneriStyle>
-            <BannerHead>
+        <>
+            <h1>
                 Apoptoosi XVIII
-            </BannerHead>
+            </h1>
             <BannerText>
-                Moikkamoi hyvää puuroa apoptoosissa Moikkamoi hyvää puuroa apoptoosissaMoikkamoi hyvää puuroa apoptoosissaMoikkamoi hyvää puuroa apoptoosissaMoikkamoi hyvää puuroa apoptoosiss
+            Aalto-yliopiston bioinformaatioteknologian ainejärjestö Inkubio täyttää 18 vuotta vuonna 2022. Tätä merkittävää tapahtumaa juhlistetaan 5.3. Inkubion vuosijuhlissa, Apoptoosi XVIII:ssa. 
             </BannerText>
-        </BanneriStyle>
+        </>
     )
 };
 
