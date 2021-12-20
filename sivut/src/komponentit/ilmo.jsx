@@ -17,7 +17,7 @@ const Ilmoittautuminen = () => {
         <ContentBox>
             Tähän ilmo. HOX täs on sit 100px padding atm, muokataan tost ylemmäst styled divist
         </ContentBox>
-        <img id = "logo"
+        <img id = "logoink"
             src={inkubio}
             alt="inkubio logo"
             height = '100'  

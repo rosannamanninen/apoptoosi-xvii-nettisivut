@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import fimlab from './fimlablogo.png';
+import ge from './geblue.png';
+import merkkim from './merkkim.png';
 import "../index.css";
 
 
@@ -21,7 +23,7 @@ const SponssiText = styled.div`
     font-family: 'East Sea Dokdo', cursive;
     text-shadow: 2px 2px 4px #564750;
     font-weight: 400;
-    color: white;
+    color: #1C3439;
     text-align: center;
 
 `;
@@ -42,15 +44,15 @@ const Sponssi = () => {
                             alt="fimlab logo"
                             height = '150'
                             />
-                        <img id = "logo"
-                            src={fimlab}
-                            alt="fimlab logo"
+                        <img id = "logoiv"
+                            src={ge}
+                            alt="ge logo"
                             height = '150'
                             
                             />
-                        <img id = "logo"
-                            src={fimlab}
-                            alt="fimlab logo"
+                        <img id = "logoiv"
+                            src={merkkim}
+                            alt="merkkimafia logo"
                             height = '150'
                             
                             />

@@ -15,35 +15,15 @@ const VujuviikkoHead = styled.div`
     text-shadow: 4px 4px 8px #3E737D;
 `;
 
-const TapahtumaLista = styled.div`
-    font-size: 30px;
-    color: #1C3439;
-    display:flex;
-    flex-direction: column;
-    width: 300px;
-    padding: 20px;
-    width: 400px;
-
-`;
-
-const Tapahtumalinkki = styled.a`
-    font-size: 25px;
-    text-decoration: none;
-    font-family: 'IBM Plex Sans Devanagari', sans-serif;
-    color: white;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px #3E737D;
-    
-`;
 
 const Vujuvuosi = () => {
 
     // linkki: teksti, nimi: teksti, pvm: teksti
     const VujuviikkoLinkki = (linkki, nimi, pvm) => {
-        return <Tapahtumalinkki href ={linkki} >
+        return <a id = "tapahtumalinkki" href ={linkki} >
             {pvm} 
             {nimi}
-            </Tapahtumalinkki>
+            </a>
     }
 
     return (
@@ -59,13 +39,13 @@ const Vujuvuosi = () => {
                     </p>
                 </ContentBox>
                 <ContentBox>
-                    <TapahtumaLista>
+                    <div id = "tapahtumalista">
                         {VujuviikkoLinkki("https://www.inkubio.fi/ilmo/event/138", "Tapa- ja Tanssikoulutus", "2.3.2021\n")}
                         {VujuviikkoLinkki("https://www.inkubio.fi/ilmo/event/138", "Krokejatkot", "3.3.2021\n")}
                         {VujuviikkoLinkki("https://www.inkubio.fi/ilmo/event/138", "Virpin läpilaulanta", "4.3.2021\n")}
                         {VujuviikkoLinkki("https://www.inkubio.fi/ilmo/event/138", "Apoptoosi XVIII", "5.3.2021\n")}
                         {VujuviikkoLinkki("https://www.inkubio.fi/ilmo/event/138", "Nekroosi", "5.3.2021\n")}
-                    </TapahtumaLista>
+                    </div>
                 </ContentBox>
             </>
     )
